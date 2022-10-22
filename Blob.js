@@ -31,7 +31,6 @@ class Blob {
     let newzoom = 64 / playerBlob.radius;
     zoom = lerp(zoom, newzoom, 0.1);
     context.scale(zoom, zoom);
-    // context.translate(-playerBlob.x, -playerBlob.y); // ? useless
 
     if (!bool) {
       context.translate(this.x, this.y);
